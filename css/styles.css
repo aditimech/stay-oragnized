@@ -86,3 +86,11 @@ table td{
 table td:first-child{
     border-left: 1px solid black;
 }
+
+#searchBtn{
+    float: right;
+}
+#todoDropdown{
+    float: right;
+    height: 30px;
+}

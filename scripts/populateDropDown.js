@@ -26,8 +26,8 @@ fetch("http://localhost:8083/api/users")
       let opt = document.createElement("option");
       let text = (opt.textContent = data[i].username);
       opt.name = data[i].name 
-      opt.id = data[i].name
-      opt.value = data[i].username;
+      opt.id = data[i].username
+      opt.value = data[i].id;
       usernameEl.appendChild(opt);
     }
   });
