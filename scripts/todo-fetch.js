@@ -3,8 +3,29 @@ const searchBtn = document.querySelector('#searchBtn');
 const userIdDropDown = document.querySelector('#todoDropdown');
 const output = document.querySelector("#output");
 
+
 let allTodosEndPont = "http://localhost:8083/api/todos";
 let byUserEndpoint = "http://localhost:8083/api/todos/byuser/";
+
+
+/* -------populate Dropdown ----------*/
+
+let usernameEl = document.getElementById("todoDropdown");
+
+fetch("http://localhost:8083/api/users")
+.then((response) => response.json())
+.then((data) => {
+  for (let i = 0; i < data.length; i++) {
+    let opt = document.createElement("option");
+    let text = (opt.textContent = data[i].username);
+    opt.name = data[i].name 
+    opt.id = data[i].username
+    opt.value = data[i].id;
+    usernameEl.appendChild(opt);
+  }
+});
+
+
 
 viewAllBtn.onclick = () => fetchData(allTodosEndPont);
 searchBtn.onclick = () => {
