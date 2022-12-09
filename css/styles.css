@@ -1,0 +1,88 @@
+body {
+    /* Format */
+    background-color: rgb(253, 253, 253);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    /* Positioning */
+    margin: 20px 5px 50px 5px;
+
+    /* Format */
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+main {
+    /* Positioning */
+    margin: 15px 10% 0px 10%;
+}
+
+nav {
+    /* Positioning */
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    /* Format */
+    background-color: white;
+
+    /* Box Shadow */
+    box-shadow: 0 1px 8px #ddd;
+
+    /* Sticky Code */
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+}
+
+nav>a {
+    /* Positioning */
+    margin: 5px 10px !important;
+    padding-left: 20px !important;
+
+    /* Format */
+    color: black !important;
+    text-decoration: none;
+    font-weight: bold !important;
+    border-left: 1px solid lightgrey;
+}
+nav>a:first-child{
+    /* Format */
+    border-left: none;
+}
+nav>a:last-child{
+    margin-right: 30px !important;
+}
+nav>a:hover {
+    /* Format */
+    color: lightgray !important;
+}
+input, select{
+    /* Positioning */
+    margin: 5px 0px;
+}
+label{
+    /* Positioning */
+    margin-left: 5px;
+}
+select[name="todoDropdown"]{
+    /* Positioning */
+    margin-left: 10px;
+}
+table{
+    border: 1px solid black;
+    margin: 40px auto;
+}
+
+table td, th{
+    padding: 5px;
+}
+
+table td{
+    border-top: 1px solid black;
+    border-left: 1px solid lightgrey;
+}
+table td:first-child{
+    border-left: 1px solid black;
+}
